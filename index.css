@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100vw;
+}
+.calculator-box{
+    width: 30%;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.error-message{
+    color: red;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#calculate-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+#result p {
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    body{
+        height: 90vh;
+    }
+    .container {
+        height: 75vh;
+    }
+    .calculator-box {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+        padding: 8px;
+        width: 75%;
+    }
+    input[type="range"] {
+        width: 75%;
+    }
+
+    #result p {
+        font-size: 14px;
+    }
+
+    .error-message{
+        font-size: 10px;
+    }
+
+    .container{
+        height: 90vh;
+    }
+
+    .calculator-box{
+        width: 90%;
+    }
+}
